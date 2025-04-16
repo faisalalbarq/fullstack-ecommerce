@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Smartphone",
+    "Description": "High-end mobile phone",
+    "Price": 799.99,
+    "CategoryId": 1
+  },
+  {
+    "Name": "T-shirt",
+    "Description": "Cotton t-shirt for summer",
+    "Price": 15.99,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Novel",
+    "Description": "Fictional best-seller",
+    "Price": 12.50,
+    "CategoryId": 3
+  },
+  {
+    "Name": "Wall Art",
+    "Description": "Abstract modern painting",
+    "Price": 45.00,
+    "CategoryId": 4
+  },
+  {
+    "Name": "Lipstick",
+    "Description": "Matte finish red lipstick",
+    "Price": 9.99,
+    "CategoryId": 5
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "ImageName": "smartphone1.jpg",
+    "ProductId": 1
+  },
+  {
+    "ImageName": "smartphone2.jpg",
+    "ProductId": 1
+  },
+  {
+    "ImageName": "tshirt.jpg",
+    "ProductId": 2
+  },
+  {
+    "ImageName": "novel.jpg",
+    "ProductId": 3
+  },
+  {
+    "ImageName": "wallart.jpg",
+    "ProductId": 4
+  },
+  {
+    "ImageName": "lipstick.jpg",
+    "ProductId": 5
+  }
+]
