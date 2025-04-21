@@ -1,6 +1,8 @@
-﻿using Ecommerce.Core.Entities;
+﻿using AutoMapper;
+using Ecommerce.Core.Entities;
 using Ecommerce.Core.Interfaces.Repositories.Contract;
 using Ecommerce.Infrastructure.Data;
+using Ecommerce.Service.ImageService;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,11 @@ namespace Ecommerce.Infrastructure.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly StoreContext _storeContext;
+
         public GenericRepository(StoreContext storeContext)
         {
             _storeContext = storeContext;
+
         }
 
         public async Task<IReadOnlyList<T>> GetAllAsync()

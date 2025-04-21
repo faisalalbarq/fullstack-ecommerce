@@ -12,6 +12,7 @@ namespace Ecommerce.Core.Interfaces.UnitOfWork
 
         IGenericRepository<TEntity> GetGenericRepository<TEntity>() where TEntity : class;
 
+        IProductRepository ProductRepository { get; }
         //public ICategoryRepository CategoryRepository { get;}
         //public IProductRepository ProductRepository { get; }
         //public IPictureRepository PictureRepository { get; }

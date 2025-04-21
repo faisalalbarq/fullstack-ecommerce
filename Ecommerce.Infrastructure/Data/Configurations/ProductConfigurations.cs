@@ -17,7 +17,7 @@ namespace Ecommerce.Infrastructure.Data.Configurations
                 .IsRequired();
             builder.Property(p => p.Description)
                 .IsRequired();
-            builder.Property(p => p.Price)
+            builder.Property(p => p.NewPrice)
                 .HasColumnType("decimal(18,2)")
                 .IsRequired();
         }
