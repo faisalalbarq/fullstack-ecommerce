@@ -32,7 +32,6 @@ namespace Ecommerce.API.Controllers
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -53,7 +52,6 @@ namespace Ecommerce.API.Controllers
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -62,22 +60,13 @@ namespace Ecommerce.API.Controllers
         public async Task<IActionResult> AddProduct(AddProductDTO addProductDTO)
         {
             try
-            {
-                //await _unitOfWork.GetGenericRepository<Product>().AddAsync(addProductDTO);
+            { 
                 await _unitOfWork.ProductRepository.AddAsync(addProductDTO);
 
-
-                //if(product is null)
-                //{
-                //    return BadRequest(new ResponseAPI(400));
-                //}
                 return Ok();
-                
-
             }
             catch (Exception ex)
             {   
-
                 return BadRequest(new ResponseAPI(400));
             }
         }
