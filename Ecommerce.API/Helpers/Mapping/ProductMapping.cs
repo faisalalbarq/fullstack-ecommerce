@@ -10,13 +10,17 @@ namespace Ecommerce.API.Helpers.Mapping
         {
             CreateMap<Product, ProductDTO>()
                 .ForMember(dest => dest.CategoryName,
-                opt => 
+                opt =>
                 opt.MapFrom(src => src.Category.Name))
                 .ReverseMap();
 
             CreateMap<Picture, PictureDTO>().ReverseMap();
 
             CreateMap<AddProductDTO, Product>()
+                .ForMember(x => x.Pictures, op => op.Ignore())
+                .ReverseMap();
+
+            CreateMap<UpdateProductDTO, Product>()
                 .ForMember(x => x.Pictures, op => op.Ignore())
                 .ReverseMap();
         }

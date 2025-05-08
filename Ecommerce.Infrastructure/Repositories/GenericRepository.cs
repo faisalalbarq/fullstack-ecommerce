@@ -26,6 +26,7 @@ namespace Ecommerce.Infrastructure.Repositories
         public async Task<IReadOnlyList<T>> GetAllAsync()
             => await _storeContext.Set<T>().AsNoTracking().ToListAsync();
 
+
         public async Task<IReadOnlyList<T>> GetAllAsync(params Expression<Func<T, object>>[] includes)
         {
             var query = _storeContext.Set<T>().AsQueryable();
